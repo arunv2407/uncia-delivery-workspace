@@ -1,0 +1,13 @@
+{
+  "version": "7",
+  "dialect": "sqlite",
+  "entries": [
+    {
+      "idx": 0,
+      "version": "6",
+      "when": 1793184151334,
+      "tag": "0000_opposite_hellfire_club",
+      "breakpoints": true
+    }
+  ]
+}

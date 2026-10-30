@@ -1,0 +1,1250 @@
+{
+  "modelVersion": "2.2",
+  "name": "Uncia Delivery Workspace",
+  "approval": "Six-sprint delivery plan",
+  "start": "2026-11-02",
+  "stageDays": 3,
+  "sprintDays": 14,
+  "buffer": 0.1,
+  "holidays": [
+    {
+      "date": "2026-11-09",
+      "name": "Diwali"
+    },
+    {
+      "date": "2026-12-25",
+      "name": "Christmas"
+    }
+  ],
+  "sprints": [
+    {
+      "eng": 30,
+      "devManager": 0,
+      "techLead": 4,
+      "l3": 0,
+      "qa": 13,
+      "qaManager": 1,
+      "qaLead": 3,
+      "hours": 8,
+      "roles": [
+        {
+          "key": "dev_manager",
+          "estimated": null,
+          "confirmed": null,
+          "share": 0
+        },
+        {
+          "key": "tech_lead",
+          "estimated": 2,
+          "confirmed": null,
+          "share": 0.1
+        },
+        {
+          "key": "developer",
+          "estimated": 6,
+          "confirmed": null,
+          "share": 0.7
+        },
+        {
+          "key": "l3_support",
+          "estimated": null,
+          "confirmed": null,
+          "share": 1
+        },
+        {
+          "key": "qa_manager",
+          "estimated": 0,
+          "confirmed": null,
+          "share": 0
+        },
+        {
+          "key": "qa_lead",
+          "estimated": 2,
+          "confirmed": null,
+          "share": 0.1
+        },
+        {
+          "key": "qa_tester",
+          "estimated": 1,
+          "confirmed": null,
+          "share": 1
+        }
+      ],
+      "scenario": [
+        8,
+        8,
+        40,
+        32,
+        50,
+        40
+      ],
+      "qaLeaveMode": "Role estimates",
+      "qaPeople": {
+        "satish": {
+          "allocation": 1,
+          "estimated": null,
+          "confirmed": null,
+          "share": null
+        },
+        "nivedha": {
+          "allocation": 1,
+          "estimated": null,
+          "confirmed": null,
+          "share": null
+        },
+        "pankaj": {
+          "allocation": 1,
+          "estimated": null,
+          "confirmed": null,
+          "share": null
+        },
+        "elavasanthan": {
+          "allocation": 1,
+          "estimated": null,
+          "confirmed": null,
+          "share": null
+        },
+        "gurumurthi": {
+          "allocation": 1,
+          "estimated": null,
+          "confirmed": null,
+          "share": null
+        },
+        "krishna": {
+          "allocation": 1,
+          "estimated": null,
+          "confirmed": null,
+          "share": null
+        },
+        "roja": {
+          "allocation": 1,
+          "estimated": null,
+          "confirmed": null,
+          "share": null
+        },
+        "prime-open": {
+          "allocation": 1,
+          "estimated": null,
+          "confirmed": null,
+          "share": null
+        },
+        "parthiban": {
+          "allocation": 1,
+          "estimated": null,
+          "confirmed": null,
+          "share": null
+        },
+        "kishan": {
+          "allocation": 1,
+          "estimated": null,
+          "confirmed": null,
+          "share": null
+        },
+        "rajkumar": {
+          "allocation": 1,
+          "estimated": null,
+          "confirmed": null,
+          "share": null
+        },
+        "leap-open1": {
+          "allocation": 1,
+          "estimated": null,
+          "confirmed": null,
+          "share": null
+        },
+        "leap-open2": {
+          "allocation": 1,
+          "estimated": null,
+          "confirmed": null,
+          "share": null
+        },
+        "bezil": {
+          "allocation": 1,
+          "estimated": null,
+          "confirmed": null,
+          "share": null
+        },
+        "sarah": {
+          "allocation": 1,
+          "estimated": null,
+          "confirmed": null,
+          "share": null
+        },
+        "rachappa": {
+          "allocation": 1,
+          "estimated": null,
+          "confirmed": null,
+          "share": null
+        },
+        "details-pending": {
+          "allocation": 1,
+          "estimated": null,
+          "confirmed": null,
+          "share": null
+        }
+      }
+    },
+    {
+      "eng": 30,
+      "devManager": 0,
+      "techLead": 4,
+      "l3": 0,
+      "qa": 13,
+      "qaManager": 1,
+      "qaLead": 3,
+      "hours": 8,
+      "roles": [
+        {
+          "key": "dev_manager",
+          "estimated": null,
+          "confirmed": null,
+          "share": 0
+        },
+        {
+          "key": "tech_lead",
+          "estimated": 2,
+          "confirmed": null,
+          "share": 0.1
+        },
+        {
+          "key": "developer",
+          "estimated": 4,
+          "confirmed": null,
+          "share": 0.7
+        },
+        {
+          "key": "l3_support",
+          "estimated": null,
+          "confirmed": null,
+          "share": 1
+        },
+        {
+          "key": "qa_manager",
+          "estimated": 0,
+          "confirmed": null,
+          "share": 0
+        },
+        {
+          "key": "qa_lead",
+          "estimated": 2,
+          "confirmed": null,
+          "share": 0.2
+        },
+        {
+          "key": "qa_tester",
+          "estimated": 3,
+          "confirmed": null,
+          "share": 0.85
+        }
+      ],
+      "scenario": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "qaLeaveMode": "Role estimates",
+      "qaPeople": {
+        "satish": {
+          "allocation": 1,
+          "estimated": null,
+          "confirmed": null,
+          "share": null
+        },
+        "nivedha": {
+          "allocation": 1,
+          "estimated": null,
+          "confirmed": null,
+          "share": null
+        },
+        "pankaj": {
+          "allocation": 1,
+          "estimated": null,
+          "confirmed": null,
+          "share": null
+        },
+        "elavasanthan": {
+          "allocation": 1,
+          "estimated": null,
+          "confirmed": null,
+          "share": null
+        },
+        "gurumurthi": {
+          "allocation": 1,
+          "estimated": null,
+          "confirmed": null,
+          "share": null
+        },
+        "krishna": {
+          "allocation": 1,
+          "estimated": null,
+          "confirmed": null,
+          "share": null
+        },
+        "roja": {
+          "allocation": 1,
+          "estimated": null,
+          "confirmed": null,
+          "share": null
+        },
+        "prime-open": {
+          "allocation": 1,
+          "estimated": null,
+          "confirmed": null,
+          "share": null
+        },
+        "parthiban": {
+          "allocation": 1,
+          "estimated": null,
+          "confirmed": null,
+          "share": null
+        },
+        "kishan": {
+          "allocation": 1,
+          "estimated": null,
+          "confirmed": null,
+          "share": null
+        },
+        "rajkumar": {
+          "allocation": 1,
+          "estimated": null,
+          "confirmed": null,
+          "share": null
+        },
+        "leap-open1": {
+          "allocation": 1,
+          "estimated": null,
+          "confirmed": null,
+          "share": null
+        },
+        "leap-open2": {
+          "allocation": 1,
+          "estimated": null,
+          "confirmed": null,
+          "share": null
+        },
+        "bezil": {
+          "allocation": 1,
+          "estimated": null,
+          "confirmed": null,
+          "share": null
+        },
+        "sarah": {
+          "allocation": 1,
+          "estimated": null,
+          "confirmed": null,
+          "share": null
+        },
+        "rachappa": {
+          "allocation": 1,
+          "estimated": null,
+          "confirmed": null,
+          "share": null
+        },
+        "details-pending": {
+          "allocation": 1,
+          "estimated": null,
+          "confirmed": null,
+          "share": null
+        }
+      }
+    },
+    {
+      "eng": 32,
+      "devManager": 0,
+      "techLead": 5,
+      "l3": 0,
+      "qa": 13,
+      "qaManager": 1,
+      "qaLead": 3,
+      "hours": 8,
+      "roles": [
+        {
+          "key": "dev_manager",
+          "estimated": null,
+          "confirmed": null,
+          "share": 0
+        },
+        {
+          "key": "tech_lead",
+          "estimated": 0,
+          "confirmed": null,
+          "share": 0.1
+        },
+        {
+          "key": "developer",
+          "estimated": 0,
+          "confirmed": null,
+          "share": 0.7
+        },
+        {
+          "key": "l3_support",
+          "estimated": null,
+          "confirmed": null,
+          "share": 1
+        },
+        {
+          "key": "qa_manager",
+          "estimated": 0,
+          "confirmed": null,
+          "share": 0
+        },
+        {
+          "key": "qa_lead",
+          "estimated": 0,
+          "confirmed": null,
+          "share": 0.2
+        },
+        {
+          "key": "qa_tester",
+          "estimated": 0,
+          "confirmed": null,
+          "share": 0.85
+        }
+      ],
+      "scenario": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "qaLeaveMode": "Role estimates",
+      "qaPeople": {
+        "satish": {
+          "allocation": 1,
+          "estimated": null,
+          "confirmed": null,
+          "share": null
+        },
+        "nivedha": {
+          "allocation": 1,
+          "estimated": null,
+          "confirmed": null,
+          "share": null
+        },
+        "pankaj": {
+          "allocation": 1,
+          "estimated": null,
+          "confirmed": null,
+          "share": null
+        },
+        "elavasanthan": {
+          "allocation": 1,
+          "estimated": null,
+          "confirmed": null,
+          "share": null
+        },
+        "gurumurthi": {
+          "allocation": 1,
+          "estimated": null,
+          "confirmed": null,
+          "share": null
+        },
+        "krishna": {
+          "allocation": 1,
+          "estimated": null,
+          "confirmed": null,
+          "share": null
+        },
+        "roja": {
+          "allocation": 1,
+          "estimated": null,
+          "confirmed": null,
+          "share": null
+        },
+        "prime-open": {
+          "allocation": 1,
+          "estimated": null,
+          "confirmed": null,
+          "share": null
+        },
+        "parthiban": {
+          "allocation": 1,
+          "estimated": null,
+          "confirmed": null,
+          "share": null
+        },
+        "kishan": {
+          "allocation": 1,
+          "estimated": null,
+          "confirmed": null,
+          "share": null
+        },
+        "rajkumar": {
+          "allocation": 1,
+          "estimated": null,
+          "confirmed": null,
+          "share": null
+        },
+        "leap-open1": {
+          "allocation": 1,
+          "estimated": null,
+          "confirmed": null,
+          "share": null
+        },
+        "leap-open2": {
+          "allocation": 1,
+          "estimated": null,
+          "confirmed": null,
+          "share": null
+        },
+        "bezil": {
+          "allocation": 1,
+          "estimated": null,
+          "confirmed": null,
+          "share": null
+        },
+        "sarah": {
+          "allocation": 1,
+          "estimated": null,
+          "confirmed": null,
+          "share": null
+        },
+        "rachappa": {
+          "allocation": 1,
+          "estimated": null,
+          "confirmed": null,
+          "share": null
+        },
+        "details-pending": {
+          "allocation": 1,
+          "estimated": null,
+          "confirmed": null,
+          "share": null
+        }
+      }
+    },
+    {
+      "eng": 30,
+      "devManager": 0,
+      "techLead": 4,
+      "l3": 0,
+      "qa": 13,
+      "qaManager": 1,
+      "qaLead": 3,
+      "hours": 8,
+      "roles": [
+        {
+          "key": "dev_manager",
+          "estimated": null,
+          "confirmed": null,
+          "share": 0
+        },
+        {
+          "key": "tech_lead",
+          "estimated": 0,
+          "confirmed": null,
+          "share": 0.1
+        },
+        {
+          "key": "developer",
+          "estimated": 0,
+          "confirmed": null,
+          "share": 0.7
+        },
+        {
+          "key": "l3_support",
+          "estimated": null,
+          "confirmed": null,
+          "share": 1
+        },
+        {
+          "key": "qa_manager",
+          "estimated": 0,
+          "confirmed": null,
+          "share": 0
+        },
+        {
+          "key": "qa_lead",
+          "estimated": 0,
+          "confirmed": null,
+          "share": 0.2
+        },
+        {
+          "key": "qa_tester",
+          "estimated": 0,
+          "confirmed": null,
+          "share": 0.85
+        }
+      ],
+      "scenario": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "qaLeaveMode": "Role estimates",
+      "qaPeople": {
+        "satish": {
+          "allocation": 1,
+          "estimated": null,
+          "confirmed": null,
+          "share": null
+        },
+        "nivedha": {
+          "allocation": 1,
+          "estimated": null,
+          "confirmed": null,
+          "share": null
+        },
+        "pankaj": {
+          "allocation": 1,
+          "estimated": null,
+          "confirmed": null,
+          "share": null
+        },
+        "elavasanthan": {
+          "allocation": 1,
+          "estimated": null,
+          "confirmed": null,
+          "share": null
+        },
+        "gurumurthi": {
+          "allocation": 1,
+          "estimated": null,
+          "confirmed": null,
+          "share": null
+        },
+        "krishna": {
+          "allocation": 1,
+          "estimated": null,
+          "confirmed": null,
+          "share": null
+        },
+        "roja": {
+          "allocation": 1,
+          "estimated": null,
+          "confirmed": null,
+          "share": null
+        },
+        "prime-open": {
+          "allocation": 1,
+          "estimated": null,
+          "confirmed": null,
+          "share": null
+        },
+        "parthiban": {
+          "allocation": 1,
+          "estimated": null,
+          "confirmed": null,
+          "share": null
+        },
+        "kishan": {
+          "allocation": 1,
+          "estimated": null,
+          "confirmed": null,
+          "share": null
+        },
+        "rajkumar": {
+          "allocation": 1,
+          "estimated": null,
+          "confirmed": null,
+          "share": null
+        },
+        "leap-open1": {
+          "allocation": 1,
+          "estimated": null,
+          "confirmed": null,
+          "share": null
+        },
+        "leap-open2": {
+          "allocation": 1,
+          "estimated": null,
+          "confirmed": null,
+          "share": null
+        },
+        "bezil": {
+          "allocation": 1,
+          "estimated": null,
+          "confirmed": null,
+          "share": null
+        },
+        "sarah": {
+          "allocation": 1,
+          "estimated": null,
+          "confirmed": null,
+          "share": null
+        },
+        "rachappa": {
+          "allocation": 1,
+          "estimated": null,
+          "confirmed": null,
+          "share": null
+        },
+        "details-pending": {
+          "allocation": 1,
+          "estimated": null,
+          "confirmed": null,
+          "share": null
+        }
+      }
+    },
+    {
+      "eng": 30,
+      "devManager": 0,
+      "techLead": 4,
+      "l3": 0,
+      "qa": 13,
+      "qaManager": 1,
+      "qaLead": 3,
+      "hours": 8,
+      "roles": [
+        {
+          "key": "dev_manager",
+          "estimated": null,
+          "confirmed": null,
+          "share": 0
+        },
+        {
+          "key": "tech_lead",
+          "estimated": 1,
+          "confirmed": null,
+          "share": 0.1
+        },
+        {
+          "key": "developer",
+          "estimated": 6,
+          "confirmed": null,
+          "share": 0.7
+        },
+        {
+          "key": "l3_support",
+          "estimated": null,
+          "confirmed": null,
+          "share": 1
+        },
+        {
+          "key": "qa_manager",
+          "estimated": 0,
+          "confirmed": null,
+          "share": 0
+        },
+        {
+          "key": "qa_lead",
+          "estimated": 1,
+          "confirmed": null,
+          "share": 0.2
+        },
+        {
+          "key": "qa_tester",
+          "estimated": 4,
+          "confirmed": null,
+          "share": 1
+        }
+      ],
+      "scenario": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "qaLeaveMode": "Role estimates",
+      "qaPeople": {
+        "satish": {
+          "allocation": 1,
+          "estimated": null,
+          "confirmed": null,
+          "share": null
+        },
+        "nivedha": {
+          "allocation": 1,
+          "estimated": null,
+          "confirmed": null,
+          "share": null
+        },
+        "pankaj": {
+          "allocation": 1,
+          "estimated": null,
+          "confirmed": null,
+          "share": null
+        },
+        "elavasanthan": {
+          "allocation": 1,
+          "estimated": null,
+          "confirmed": null,
+          "share": null
+        },
+        "gurumurthi": {
+          "allocation": 1,
+          "estimated": null,
+          "confirmed": null,
+          "share": null
+        },
+        "krishna": {
+          "allocation": 1,
+          "estimated": null,
+          "confirmed": null,
+          "share": null
+        },
+        "roja": {
+          "allocation": 1,
+          "estimated": null,
+          "confirmed": null,
+          "share": null
+        },
+        "prime-open": {
+          "allocation": 1,
+          "estimated": null,
+          "confirmed": null,
+          "share": null
+        },
+        "parthiban": {
+          "allocation": 1,
+          "estimated": null,
+          "confirmed": null,
+          "share": null
+        },
+        "kishan": {
+          "allocation": 1,
+          "estimated": null,
+          "confirmed": null,
+          "share": null
+        },
+        "rajkumar": {
+          "allocation": 1,
+          "estimated": null,
+          "confirmed": null,
+          "share": null
+        },
+        "leap-open1": {
+          "allocation": 1,
+          "estimated": null,
+          "confirmed": null,
+          "share": null
+        },
+        "leap-open2": {
+          "allocation": 1,
+          "estimated": null,
+          "confirmed": null,
+          "share": null
+        },
+        "bezil": {
+          "allocation": 1,
+          "estimated": null,
+          "confirmed": null,
+          "share": null
+        },
+        "sarah": {
+          "allocation": 1,
+          "estimated": null,
+          "confirmed": null,
+          "share": null
+        },
+        "rachappa": {
+          "allocation": 1,
+          "estimated": null,
+          "confirmed": null,
+          "share": null
+        },
+        "details-pending": {
+          "allocation": 1,
+          "estimated": null,
+          "confirmed": null,
+          "share": null
+        }
+      }
+    },
+    {
+      "eng": 30,
+      "devManager": 0,
+      "techLead": 4,
+      "l3": 0,
+      "qa": 13,
+      "qaManager": 1,
+      "qaLead": 3,
+      "hours": 8,
+      "roles": [
+        {
+          "key": "dev_manager",
+          "estimated": null,
+          "confirmed": null,
+          "share": 0
+        },
+        {
+          "key": "tech_lead",
+          "estimated": 1,
+          "confirmed": null,
+          "share": 0.1
+        },
+        {
+          "key": "developer",
+          "estimated": 6,
+          "confirmed": null,
+          "share": 0.7
+        },
+        {
+          "key": "l3_support",
+          "estimated": null,
+          "confirmed": null,
+          "share": 1
+        },
+        {
+          "key": "qa_manager",
+          "estimated": 0,
+          "confirmed": null,
+          "share": 0
+        },
+        {
+          "key": "qa_lead",
+          "estimated": 1,
+          "confirmed": null,
+          "share": 0.2
+        },
+        {
+          "key": "qa_tester",
+          "estimated": 4,
+          "confirmed": null,
+          "share": 0.85
+        }
+      ],
+      "scenario": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "qaLeaveMode": "Role estimates",
+      "qaPeople": {
+        "satish": {
+          "allocation": 1,
+          "estimated": null,
+          "confirmed": null,
+          "share": null
+        },
+        "nivedha": {
+          "allocation": 1,
+          "estimated": null,
+          "confirmed": null,
+          "share": null
+        },
+        "pankaj": {
+          "allocation": 1,
+          "estimated": null,
+          "confirmed": null,
+          "share": null
+        },
+        "elavasanthan": {
+          "allocation": 1,
+          "estimated": null,
+          "confirmed": null,
+          "share": null
+        },
+        "gurumurthi": {
+          "allocation": 1,
+          "estimated": null,
+          "confirmed": null,
+          "share": null
+        },
+        "krishna": {
+          "allocation": 1,
+          "estimated": null,
+          "confirmed": null,
+          "share": null
+        },
+        "roja": {
+          "allocation": 1,
+          "estimated": null,
+          "confirmed": null,
+          "share": null
+        },
+        "prime-open": {
+          "allocation": 1,
+          "estimated": null,
+          "confirmed": null,
+          "share": null
+        },
+        "parthiban": {
+          "allocation": 1,
+          "estimated": null,
+          "confirmed": null,
+          "share": null
+        },
+        "kishan": {
+          "allocation": 1,
+          "estimated": null,
+          "confirmed": null,
+          "share": null
+        },
+        "rajkumar": {
+          "allocation": 1,
+          "estimated": null,
+          "confirmed": null,
+          "share": null
+        },
+        "leap-open1": {
+          "allocation": 1,
+          "estimated": null,
+          "confirmed": null,
+          "share": null
+        },
+        "leap-open2": {
+          "allocation": 1,
+          "estimated": null,
+          "confirmed": null,
+          "share": null
+        },
+        "bezil": {
+          "allocation": 1,
+          "estimated": null,
+          "confirmed": null,
+          "share": null
+        },
+        "sarah": {
+          "allocation": 1,
+          "estimated": null,
+          "confirmed": null,
+          "share": null
+        },
+        "rachappa": {
+          "allocation": 1,
+          "estimated": null,
+          "confirmed": null,
+          "share": null
+        },
+        "details-pending": {
+          "allocation": 1,
+          "estimated": null,
+          "confirmed": null,
+          "share": null
+        }
+      }
+    }
+  ],
+  "qaRoster": [
+    {
+      "id": "satish",
+      "name": "Satish J",
+      "designation": "Head of QA",
+      "role": "head",
+      "seniority": "Head",
+      "group": "QA leadership",
+      "lead": "",
+      "product": "Cross-product",
+      "client": "",
+      "employment": "Employee",
+      "status": "Excluded"
+    },
+    {
+      "id": "nivedha",
+      "name": "Nivedha S",
+      "designation": "QA Specialist",
+      "role": "qa_lead",
+      "seniority": "Lead / Specialist",
+      "group": "UNCIA PRIME (LOS)",
+      "lead": "Satish J",
+      "product": "UNCIA PRIME (LOS)",
+      "client": "ICICI HFC; LendingKart",
+      "employment": "Employee",
+      "status": "Active"
+    },
+    {
+      "id": "pankaj",
+      "name": "Pankaj Singh Sengar",
+      "designation": "Senior QA Engineer",
+      "role": "qa_tester",
+      "seniority": "Senior engineer",
+      "group": "UNCIA PRIME (LOS)",
+      "lead": "Nivedha S",
+      "product": "UNCIA PRIME (LOS)",
+      "client": "LendingKart",
+      "employment": "Employee",
+      "status": "Active"
+    },
+    {
+      "id": "elavasanthan",
+      "name": "Elavasanthan K",
+      "designation": "QA Engineer",
+      "role": "qa_tester",
+      "seniority": "Engineer / Tester",
+      "group": "UNCIA PRIME (LOS)",
+      "lead": "Nivedha S",
+      "product": "UNCIA PRIME (LOS)",
+      "client": "LendingKart",
+      "employment": "Employee",
+      "status": "Active"
+    },
+    {
+      "id": "gurumurthi",
+      "name": "Gurumurthi M",
+      "designation": "QA Engineer",
+      "role": "qa_tester",
+      "seniority": "Engineer / Tester",
+      "group": "UNCIA PRIME (LOS)",
+      "lead": "Nivedha S",
+      "product": "UNCIA PRIME (LOS)",
+      "client": "LendingKart",
+      "employment": "Employee",
+      "status": "Active"
+    },
+    {
+      "id": "krishna",
+      "name": "Krishna Teja",
+      "designation": "QA Engineer (Contract)",
+      "role": "qa_tester",
+      "seniority": "Engineer / Tester",
+      "group": "UNCIA PRIME (LOS)",
+      "lead": "Nivedha S",
+      "product": "UNCIA PRIME (LOS)",
+      "client": "LendingKart",
+      "employment": "Contract",
+      "status": "Active"
+    },
+    {
+      "id": "roja",
+      "name": "Roja Kondru",
+      "designation": "QA Engineer (Contract)",
+      "role": "qa_tester",
+      "seniority": "Engineer / Tester",
+      "group": "UNCIA PRIME (LOS)",
+      "lead": "Nivedha S",
+      "product": "UNCIA PRIME (LOS)",
+      "client": "ICICI HFC",
+      "employment": "Contract",
+      "status": "Active"
+    },
+    {
+      "id": "prime-open",
+      "name": "Open contract position 1",
+      "designation": "QA Engineer (Contract)",
+      "role": "qa_tester",
+      "seniority": "Engineer / Tester",
+      "group": "UNCIA PRIME (LOS)",
+      "lead": "Nivedha S",
+      "product": "UNCIA PRIME (LOS)",
+      "client": "",
+      "employment": "Contract",
+      "status": "Open"
+    },
+    {
+      "id": "parthiban",
+      "name": "Parthiban Rajendiran",
+      "designation": "Senior QA Specialist",
+      "role": "qa_lead",
+      "seniority": "Lead / Specialist",
+      "group": "UNCIA LEAP (LMS) & UNCIA FLOW (SCF)",
+      "lead": "Satish J",
+      "product": "UNCIA LEAP; UNCIA FLOW",
+      "client": "",
+      "employment": "Employee",
+      "status": "Active"
+    },
+    {
+      "id": "kishan",
+      "name": "Kishan Kumar E",
+      "designation": "Software Test Engineer",
+      "role": "qa_tester",
+      "seniority": "Engineer / Tester",
+      "group": "UNCIA LEAP (LMS) & UNCIA FLOW (SCF)",
+      "lead": "Parthiban Rajendiran",
+      "product": "UNCIA FLOW (SCF)",
+      "client": "",
+      "employment": "Employee",
+      "status": "Active"
+    },
+    {
+      "id": "rajkumar",
+      "name": "Rajkumar Kathiresan",
+      "designation": "Software Test Engineer",
+      "role": "qa_tester",
+      "seniority": "Engineer / Tester",
+      "group": "UNCIA LEAP (LMS) & UNCIA FLOW (SCF)",
+      "lead": "Parthiban Rajendiran",
+      "product": "UNCIA LEAP (LMS)",
+      "client": "",
+      "employment": "Employee",
+      "status": "Active"
+    },
+    {
+      "id": "leap-open1",
+      "name": "Open contract position 2",
+      "designation": "QA Engineer (Contract)",
+      "role": "qa_tester",
+      "seniority": "Engineer / Tester",
+      "group": "UNCIA LEAP (LMS) & UNCIA FLOW (SCF)",
+      "lead": "Parthiban Rajendiran",
+      "product": "UNCIA LEAP; UNCIA FLOW",
+      "client": "",
+      "employment": "Contract",
+      "status": "Open"
+    },
+    {
+      "id": "leap-open2",
+      "name": "Open contract position 3",
+      "designation": "QA Engineer (Contract)",
+      "role": "qa_tester",
+      "seniority": "Engineer / Tester",
+      "group": "UNCIA LEAP (LMS) & UNCIA FLOW (SCF)",
+      "lead": "Parthiban Rajendiran",
+      "product": "UNCIA LEAP; UNCIA FLOW",
+      "client": "",
+      "employment": "Contract",
+      "status": "Open"
+    },
+    {
+      "id": "bezil",
+      "name": "Bezil M",
+      "designation": "QA Specialist",
+      "role": "qa_lead",
+      "seniority": "Lead / Specialist",
+      "group": "PRIME Automation & Manual",
+      "lead": "Satish J",
+      "product": "UNCIA PRIME (LOS)",
+      "client": "ICICI HFC",
+      "employment": "Employee",
+      "status": "Active"
+    },
+    {
+      "id": "sarah",
+      "name": "Sarah S",
+      "designation": "QA Engineer",
+      "role": "qa_tester",
+      "seniority": "Engineer / Tester",
+      "group": "PRIME Automation & Manual",
+      "lead": "Bezil M",
+      "product": "UNCIA PRIME (LOS)",
+      "client": "ICICI HFC",
+      "employment": "Employee",
+      "status": "Active"
+    },
+    {
+      "id": "rachappa",
+      "name": "Rachappa Bandi",
+      "designation": "QA Manager",
+      "role": "qa_manager",
+      "seniority": "Manager",
+      "group": "Cross-product",
+      "lead": "Satish J",
+      "product": "Cross-product",
+      "client": "",
+      "employment": "Employee",
+      "status": "Active"
+    },
+    {
+      "id": "details-pending",
+      "name": "Active resource \u2014 details pending",
+      "designation": "Designation to confirm",
+      "role": "qa_tester",
+      "seniority": "To confirm",
+      "group": "To confirm",
+      "lead": "To confirm",
+      "product": "To confirm",
+      "client": "",
+      "employment": "To confirm",
+      "status": "Active \u2014 details pending"
+    }
+  ],
+  "leaves": [],
+  "dataMaintenance": {
+    "jira-reset-2026-10-30": true
+  }
+}

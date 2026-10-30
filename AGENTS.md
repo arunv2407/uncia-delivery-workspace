@@ -1,0 +1,20 @@
+# Delivery Workspace
+
+Purpose: streamline, track and manage delivery, improve predictability and reduce team strain. Do not add prescriptive instructions about how engineers or QA should do their jobs. Do not restore the removed daily execution schedule or presentation slide.
+
+Keep Excel, the webpage and relevant presentation content aligned when changes are requested. Version 1: ongoing sprints with independent names, goals, start and end dates, 3 workdays intake/prioritisation plus 3 storytelling/estimation, seven roles, one fixed 10% buffer after role leave, no other allowance/reserve. Remove approval claims. Hours remain indicative. QA staffing comes from qa-roster.json (13 stated active, 12 named plus one details pending; 3 vacancies and Satish excluded). Keep names, designations, seniority, products, clients and employment status; never store experience. Calendar leave replaces pooled role estimates for affected sprints; exclude holidays/weekends and reject duplicate day bookings.
+
+Never overwrite live saved plans with seed data during deployment. The web database holds live plans; Excel/PPT files are dated snapshots. Future changes must update lib/model.ts, UI, data compatibility, parity tests, workbook formulas and applicable presentation figures. Preserve owner-private audience unless explicitly changed.
+
+Jira imports require explicit scope classification and verified sprint-only worklog attribution. Never infer effort author from assignee or call hours individual productivity. Manual actual totals override imported effort. Preserve legacy dates on migration. No fixed sprint-count limit.
+
+Sprint lifecycle: Planned inputs editable. Start requires readiness. Active allows only End/Cancel and locks shared inputs that affect it. Ended/Cancelled planning stays frozen using lockedContext, while actuals/Jira close reporting is allowed. Uncia export template preserves metadata and source categories. Reported assignee hours are not worklog attribution. Never bundle customer Jira report rows or auto-import a supplied report on load. The authorized one-time Jira reset removes issues/import metadata from current plans and history, preserving planning and manual actuals.
+
+Roles & leave is the main dated individual QA leave entry view. Leave kind defaults to Planned for old records; Unplanned is separate. Half-day fractions apply to each working date in a range. Active sprint permits additional unplanned leave as a later user-authorized exception, preserving frozen baseline and showing revised capacity. Baseline bookings and closed sprint leave remain locked. Release timeline is not Beta and supports one or three consecutive sprints; the table always lists all sprints/statuses.
+
+Client catalog: seed from existing roster, fixed products PRIME/LEAP/FLOW only. Users may create clients and map to one or more existing products, then assign via dropdowns. Preserve multiple client assignments; changing a resource product clears incompatible clients with visible guidance.
+
+
+## User-controlled Git workflow
+
+The user requires explicit instructions for branch creation, commits, pushes, PRs, merges and production publication. Prepare and test local changes first. Do not commit/push/merge/publish merely because a change was requested. After user approval, commit/push only to the approved feature/fix branch; use lowercase `main` for the approved baseline. Never push directly to main after bootstrap, force-push, enable auto-merge or auto-deploy. A commit approval is not a merge approval; request separate explicit merge/deployment instructions unless the user authorizes both together. Record the repository URL when selected. Sites source synchronization also makes commits, so it is subject to this approval gate. Preserve this gate in future sessions.

@@ -1,0 +1,52 @@
+# Current state — Version 1
+
+Date: 30 October 2026. Repository: https://github.com/arunv2407/uncia-delivery-workspace (private).
+
+## Initial GitHub baseline
+
+This repository starts with a fresh history based on the deployed Sites source plus the approved Jira cleanup. It does not copy the old Sites Git history, which contains the previously supplied report. Customer Jira issue rows, the bundled report, automatic re-import code and the expired fixed-owner import endpoint are removed. Tests use synthetic Jira fixtures.
+
+The hosted app at https://delivery-predictability.arun2407.chatgpt.site/ still runs Site version 8 until separately approved for deployment. The GitHub code check-in does not change live data.
+
+## Capabilities
+
+| Area | Current implementation |
+| --- | --- |
+| Sprints | No fixed sprint-count limit; independent name, goal and dates; original six seed sprints retained |
+| Lifecycle | Planned edits; start-readiness validation; Active planning locked; End/Cancel; frozen historical planning |
+| Capacity | Seven roles, QA allocations, workdays/holidays and leave, one fixed 10% buffer |
+| QA leave | Resource dropdown, Planned/Unplanned, from/to, full/half day per working date; automatic sprint split; duplicate dates blocked; edit/delete unlocked entries |
+| Active unplanned leave | Explicit exception permitting additional unplanned leave while retaining original baseline |
+| Client catalog | Create clients; map to fixed PRIME/LEAP/FLOW products; multiple resource client assignments |
+| Assignments location | QA team register, far-right Product/Client columns; catalog in Plan settings |
+| Timeline | One sprint or three consecutive sprints; all-sprint status table; no Beta label |
+| Actuals & Jira (Beta) | Per-resource manual effort; file import/mapping; scope and completion analytics; no live Jira API synchronization |
+| Persistence | Owner-authenticated D1 plan and version history, optimistic revision checks, JSON import/export |
+| UI | Visible editable fields, sprint goal inputs, scrollable navigation, Version 1 label |
+
+## Jira removal behavior awaiting deployment
+
+On the first authenticated plan or history load after an approved deployment, the one-time owner-scoped cleanup removes issues, import metadata, inbox reports and completed-import markers from that owner's current plan and saved history. It preserves sprint planning, leave, clients and manually entered actuals. The current revision increases to reject stale saves; current/history changes are transactional. A saved marker prevents subsequent user imports from being erased.
+
+This source change does not erase existing Sites Git history, earlier deployments/backups, previously exported ZIP files, or the original attachment in ChatGPT. Those remain separate artifacts. No production cleanup is claimed before deployment and an authenticated load.
+
+## Calculation and attribution rules
+
+QA calendar leave replaces legacy aggregate estimates rather than adding both. Weekends/holidays are excluded; even two half-day bookings on the same resource/date are rejected. Assignee is not worklog author. Manual actual totals override verified imported worklog effort. Reported hours are not individual productivity rankings.
+
+## Remaining work
+
+- Engineering named roster has not been supplied; named Engineering leave remains pending.
+- QA seed contains 12 named active people plus one details-pending position to reconcile the stated 13; vacancies and the head are excluded from capacity.
+- Excel/PPT downloads are older Version 1 snapshots and do not cover every later web workflow.
+- Product/client assignment controls need better discoverability.
+- The Capacity breakdown summary table in app/workspace.tsx has eight headers and six row cells; align the summary display and add explicit baseline/revised fields in a future approved change. Domain calculation tests pass.
+- Branch protection and CI enforcement are not configured by this initial check-in. User approval requirements are recorded in AGENTS.md and GIT_WORKFLOW.md.
+
+## Validation
+
+Model regression tests, dedicated transactional cleanup tests, TypeScript checking and the production build passed for this baseline. Cleanup tests verify owner isolation, manual/planning preservation, historical scrubbing, stale-revision rejection, rollback and preservation of future imports. A fresh external-machine install and independent hosting migration have not been tested.
+
+## Data portability
+
+Source contains seed data and snapshots, not a production database backup. To migrate current planning, save changes in the live app and click Export plan. Import the JSON through Plan settings on a target installation with working auth/D1. Plan JSON does not migrate saved-version history. Keep backups separate from Git.
