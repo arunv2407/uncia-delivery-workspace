@@ -35,3 +35,8 @@ Repository protection can enforce PRs and required checks where supported by the
 Local changes remove the bundled report, automatic report import and expired import endpoint. On the first authenticated plan/history load after an approved deployment, a one-time owner-scoped cleanup clears Jira issues, import metadata/inbox/completion markers from the current plan and all saved versions. It preserves sprint planning, named leave, client assignments and manual actual hours. The reset is transactional and revision-checked. Later user imports remain supported and are not automatically deleted.
 
 Initial baseline check-in is approved. No PR/merge, production deployment or production data deletion is authorized by that check-in approval. The previously delivered ZIP and original CSV attachment remain older artifacts and must not be used for the clean initial import. This cleanup does not erase platform deployment backups, existing Sites Git history, or Library files; those require separate explicit operations.
+
+
+## Engineering update prepared on 02 November 2026
+
+Source: user-supplied PEG Org Chart (Final-List V4). Local changes add Engineering register/availability, planned/unplanned dated leave and actual hours, preserve started legacy sprint planning, and refresh Excel/PPT snapshots. Default Head exclusion is an editable assumption. Counts reconcile to 30 positions, 28 filled, 2 vacancies; 21 filled positions have names pending. The user explicitly authorized all three steps on 02 November 2026: create feature/engineering-roster, commit/push/open a PR, merge to main, and deploy. This authorization applies to this Engineering update only; future changes retain the approval gates above.

@@ -36,11 +36,11 @@ QA calendar leave replaces legacy aggregate estimates rather than adding both. W
 
 ## Remaining work
 
-- Engineering named roster has not been supplied; named Engineering leave remains pending.
+- Engineering structure supplied 02 Nov 2026 is included in this release: 30 positions / 28 filled / 2 vacancies. Six leaders have names, 21 other filled positions remain explicitly unnamed. The Head is excluded by default but can be included explicitly. Named/position leave and actual hours are integrated; The user authorized branch/PR, merge and deployment on 02 Nov 2026; release completion is verified through GitHub and Sites deployment receipts.
 - QA seed contains 12 named active people plus one details-pending position to reconcile the stated 13; vacancies and the head are excluded from capacity.
-- Excel/PPT downloads are older Version 1 snapshots and do not cover every later web workflow.
+- Local Excel/PPT downloads now include the PEG Engineering structure and revised capacity figures. They remain dated planning snapshots, with six original sprint records, not live database exports or automatic lifecycle enforcement.
 - Product/client assignment controls need better discoverability.
-- The Capacity breakdown summary table in app/workspace.tsx has eight headers and six row cells; align the summary display and add explicit baseline/revised fields in a future approved change. Domain calculation tests pass.
+- The capacity summary alignment is repaired in this local change and now shows baseline/revised availability and additional unplanned leave consistently.
 - Branch protection and CI enforcement are not configured by this initial check-in. User approval requirements are recorded in AGENTS.md and GIT_WORKFLOW.md.
 
 ## Validation

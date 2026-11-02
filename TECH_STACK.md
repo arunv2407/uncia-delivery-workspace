@@ -39,11 +39,11 @@ Migration: `drizzle/0000_opposite_hellfire_club.sql`. Plan JSON contains sprint 
 | --- | --- |
 | `app/sprint-manager.tsx` | Sprint editing, creation and lifecycle |
 | `app/leave-calendar.tsx` | Individual dated leave and summaries |
-| `app/qa-team.tsx`, `app/client-settings.tsx` | Roster, client catalog and assignments |
+| `app/qa-team.tsx`, `app/engineering-team.tsx`, `app/client-settings.tsx` | Team rosters, client catalog and assignments |
 | `app/sprint-insights.tsx` | Import preview/mapping, actuals and analytics |
 | `lib/model.ts`, `lib/insights.ts`, `lib/assignments.ts` | Core rules |
 | `lib/jira-cleanup.ts` | Owner-scoped, one-time removal of prior Jira imports and history |
-| `seed-plan.json`, `qa-roster.json` | Initial planning and QA data |
+| `seed-plan.json`, `qa-roster.json`, `engineering-roster.json` | Initial planning and supplied QA/Engineering structures |
 | `app/chatgpt-auth.ts` | Identity helper and sign-in/out paths |
 | `app/api/plan`, `app/api/history` | Persistence APIs |
 | `worker/index.ts`, `vite.config.ts`, `scripts/vite` | Worker/hosting integration |
