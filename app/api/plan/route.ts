@@ -10,7 +10,7 @@ export async function GET(){
   let cleaned=false;
   if(row){const result=await cleanSavedJiraData(db,user.userId,row);row=result.row;cleaned=result.changed;}
   const plan=migratePlan(row?JSON.parse(row.data):seedPlan);
-  return Response.json({plan,upgraded:row?JSON.parse(row.data).modelVersion!=='1':true,revision:row?.version??0,updatedAt:row?.updated_at??null,importMessage:cleaned?'Jira data cleared from this plan and saved history. You can import a new report when ready.':''},{headers:{'Cache-Control':'no-store'}});
+  return Response.json({plan,upgraded:row?(JSON.parse(row.data).modelVersion!=='1'||!JSON.parse(row.data).engRoster):true,revision:row?.version??0,updatedAt:row?.updated_at??null,importMessage:cleaned?'Jira data cleared from this plan and saved history. You can import a new report when ready.':''},{headers:{'Cache-Control':'no-store'}});
  }catch(error){return Response.json({error:error instanceof Error?error.message:'Unable to load saved plan'},{status:409});}
 }
 export async function PUT(request:Request){const user=await getChatGPTUser();if(!user)return Response.json({error:'Please sign in.'},{status:401});if(request.headers.get('origin')&&new URL(request.url).origin!==request.headers.get('origin'))return Response.json({error:'Invalid origin'},{status:403});try{const raw=await request.text();if(raw.length>8000000)return Response.json({error:'Plan is too large'},{status:413});const body=JSON.parse(raw),plan=validate(body.plan),rev=body.revision;if(!Number.isInteger(rev)||rev<0)throw new Error('Invalid revision');const db=env.DB;if(!db)return Response.json({error:'Saved plans unavailable'},{status:503});const previous=await db.prepare('SELECT data FROM plans WHERE owner = ?').bind(user.userId).first<{data:string}>();
