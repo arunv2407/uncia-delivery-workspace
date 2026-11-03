@@ -50,3 +50,8 @@ Model regression tests, dedicated transactional cleanup tests, TypeScript checki
 ## Data portability
 
 Source contains seed data and snapshots, not a production database backup. To migrate current planning, save changes in the live app and click Export plan. Import the JSON through Plan settings on a target installation with working auth/D1. Plan JSON does not migrate saved-version history. Keep backups separate from Git.
+
+
+## Leave department selector — 03 November 2026
+
+Leave calendar and Roles & leave use Department / Function (QA or Engineering) before Resource. Names are filtered to the selected team and no longer have department prefixes. Switching departments clears the selected person. Editing a booking restores the correct department and person. Existing leave records, duplicate checks, dates, day fractions, lifecycle locks and capacity calculations are unchanged. The user explicitly approved feature branch, commit, merge and private deployment for this update.
