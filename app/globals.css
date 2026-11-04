@@ -40,3 +40,5 @@ td input:not(.number){min-width:190px;width:100%}td input[aria-label$="goal"]{mi
 .data-table th[data-column]{touch-action:pan-y;cursor:grab;user-select:none}.data-table th[data-column]:active{cursor:grabbing}.data-table th.column-drop-target{box-shadow:inset 4px 0 #4263eb;background:#e9efff}.column-drag-hint{font-size:12px;color:#52627c}.column-sort{cursor:grab!important}.column-filter{cursor:text;user-select:text}
 
 .capacity-reconciliation{display:flex;flex-wrap:wrap;gap:14px;padding:16px 20px;background:#f4f7fc;border-bottom:1px solid #e1e6ee}.capacity-reconciliation span{font-size:13px}.capacity-reconciliation b{color:#423070}
+
+.stat-grid:has(> :last-child:nth-child(2)){grid-template-columns:repeat(2,minmax(0,1fr))}@media(max-width:680px){.stat-grid:has(> :last-child:nth-child(2)){grid-template-columns:1fr}}
