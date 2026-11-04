@@ -1,4 +1,5 @@
 'use client';
+import SprintResources from './sprint-resources';
 import TeamCapacity from './team-capacity';
 import EditorLock from './editor-lock';
 import DataTable from './data-table';
@@ -7,7 +8,7 @@ import {ENGINEERING_DESIGNATIONS,setReportingManager,renameResource} from '../li
 import {ProductCell,ClientCell} from './client-settings';
 import {engMembers,engRows,included,type Plan,type QAPerson} from '../lib/model';
 const fmt=(v:number|null)=>v===null?'—':v.toLocaleString('en-IN',{maximumFractionDigits:1});
-export function EngineeringContext({plan}:{plan:Plan}){return <details className="panel qa-context"><summary>Engineering register · {engMembers(plan).length} delivery positions · {plan.engRoster.filter(r=>r.status==='Open').length} vacancies</summary><p className="panel-foot">PEG chart: 30 positions, 28 filled, 2 Software Engineer vacancies. Leaders are included in their team rows. Head is initially excluded from delivery capacity and can be included explicitly in Engineering team.</p></details>;}
+export function EngineeringContext({plan,active}:{plan:Plan;active:number}){return <SprintResources plan={plan} active={active} team="Engineering"/>;}
 export default function EngineeringTeam({plan,active,change}:{plan:Plan;active:number;change:(fn:(p:Plan)=>void)=>void}){
  const s=plan.sprints[active],rows=engRows(plan,active),locked=s.status!=='Planned',rosterLocked=locked||plan.sprints.some(x=>x.status==='Active');
  function edit(id:string,key:keyof QAPerson,value:string){change(p=>{const person=p.engRoster.find(r=>r.id===id)!;if(key==='name')renameResource(p,id,value);else if(key==='lead')setReportingManager(p,id,value);else person[key]=value;p.sprints.forEach(x=>{if(x.status==='Planned')x.engReviewed=false;});});}
