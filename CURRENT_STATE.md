@@ -14,7 +14,7 @@ The hosted app at https://delivery-predictability.arun2407.chatgpt.site/ still r
 | --- | --- |
 | Sprints | No fixed sprint-count limit; independent name, goal and dates; original six seed sprints retained |
 | Lifecycle | Planned edits; start-readiness validation; Active planning locked; End/Cancel; frozen historical planning |
-| Capacity | Seven roles, QA allocations, workdays/holidays and leave, one fixed 10% buffer |
+| Capacity | Seven roles, QA allocations, workdays/holidays and leave, one editable buffer (default 10%) |
 | QA leave | Resource dropdown, Planned/Unplanned, from/to, full/half day per working date; automatic sprint split; duplicate dates blocked; edit/delete unlocked entries |
 | Active unplanned leave | Explicit exception permitting additional unplanned leave while retaining original baseline |
 | Client catalog | Create clients; map to fixed PRIME/LEAP/FLOW products; multiple resource client assignments |
@@ -55,3 +55,13 @@ Source contains seed data and snapshots, not a production database backup. To mi
 ## Leave department selector — 03 November 2026
 
 Leave calendar and Roles & leave use Department / Function (QA or Engineering) before Resource. Names are filtered to the selected team and no longer have department prefixes. Switching departments clears the selected person. Editing a booking restores the correct department and person. Existing leave records, duplicate checks, dates, day fractions, lifecycle locks and capacity calculations are unchanged. The user explicitly approved feature branch, commit, merge and private deployment for this update.
+
+
+## Dedicated sprint QA and product selection
+
+Planned sprints migrate once to Parthiban Rajendiran and Rajkumar Kathiresan at 87.5% allocation each (7 h of an 8 h working day). Both start with 0 planned leave. Other QA resources remain in the register at 0 default sprint allocation. The existing 10% buffer applies after leave, so each has 6.3 indicative hours per working day before leave. Started/closed historical sprint allocations remain frozen. Future newly created sprints receive the same defaults; later explicit allocation adjustments are retained by the migration marker. QA Engineer replaces Engineer / Tester wording without changing anybody to QA Manager. Product checkboxes support any combination of PRIME, LEAP and FLOW, and client choices use their combined mappings. No new product creation. Included in the approved team and capacity update.
+
+
+## Team controls, sprint work share and buffer — 04 November 2026
+
+Reporting managers are editable in both registers; renaming a manager updates reporting references. Engineering designations use the six user-specified choices. Every data table supports header sorting, per-column filters, search, and column movement, with browser-local saved views and Reset view. View controls remain usable for locked sprints; editing stays locked. Resource work share is sprint-specific: percentage and hours/day edit the same allocation, applied once before leave and buffer. Buffer is editable from 0–100% in Plan settings (default 10%), locked while a sprint is active, and snapshotted at start so historical capacity remains unchanged. Old started baselines use their original 10%. Excel/PPT downloads are dated snapshots and do not expose these new interactive controls or live edits. The user authorized check-in and application publication for this update.
