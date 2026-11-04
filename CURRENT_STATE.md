@@ -68,3 +68,10 @@ Reporting managers are editable in both registers; renaming a manager updates re
 
 
 Reporting manager correction: use a native select (unfiltered list on open), offering Engineering Head Denslyn J, all Tech Leads and named QA leadership, excluding the resource themselves. Preserve existing manager values. Table columns move by dragging the header directly; pointer dragging works across the app, the target is highlighted, order persists locally, and arrow keys on the grip provide keyboard access. Remove the separate column movement panel.
+
+
+## Capacity alignment — 04 November 2026
+
+Authorized correction: current saved Sprint 1 allocations remain authoritative, including all three user-selected QA resources (do not reapply the earlier two-person defaults). A one-time owner-scoped, revision-guarded saved-plan repair switches planned capacity to dated leave, copies S1 allocations, hours and shares into S2/S3, and clears allocations/legacy capacity estimates in existing S4 onward. Preserve goals, dates, rosters, leave entries, Jira/manual actuals and started/closed planning; retain backup history before and after repair. The durable marker prevents repeat resets. Repair runs on the next authenticated plan load; never claim live data verified without that load. Buffer is retained at the user's saved value, currently zero. The reconciliation case is 450 allocated Engineering hours minus stale 7 pooled leave days × 8 h = 394; dated leave yields 450 when none falls in the sprint. QA is 3 × 7 × 10 = 210.
+
+Engineering and QA share TeamCapacity: identical columns, allocation visibility filters, per-column filtering/search/sort/drag, work share %, sprint hours/day, leave and buffer reconciliation. Editing allocation selects dated calendar leave. Allocated headcounts exclude zero allocations. Overview cards now follow an independent sprint selector, while a separate labelled total covers all sprints. Dated Excel/PPT snapshots do not represent the live saved-plan repair.

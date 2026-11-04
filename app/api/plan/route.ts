@@ -1,3 +1,4 @@
+import {repairSavedCapacity} from '../../../lib/capacity-repair';
 import {cleanSavedJiraData} from '../../../lib/jira-cleanup';
 import {env} from 'cloudflare:workers';import {getChatGPTUser} from '../../chatgpt-auth';import {seedPlan,validate,migratePlan,leaveConflict,checkLifecycle} from '../../../lib/model';
 export async function GET(){
@@ -9,6 +10,7 @@ export async function GET(){
   let row=await db.prepare('SELECT data,version,updated_at FROM plans WHERE owner = ?').bind(user.userId).first<{data:string;version:number;updated_at:string}>();
   let cleaned=false;
   if(row){const result=await cleanSavedJiraData(db,user.userId,row);row=result.row;cleaned=result.changed;}
+  if(row)row=await repairSavedCapacity(db,user.userId,row,migratePlan(JSON.parse(row.data)));
   const plan=migratePlan(row?JSON.parse(row.data):seedPlan);
   return Response.json({plan,upgraded:row?JSON.stringify(JSON.parse(row.data))!==JSON.stringify(plan):true,revision:row?.version??0,updatedAt:row?.updated_at??null,importMessage:cleaned?'Jira data cleared from this plan and saved history. You can import a new report when ready.':''},{headers:{'Cache-Control':'no-store'}});
  }catch(error){return Response.json({error:error instanceof Error?error.message:'Unable to load saved plan'},{status:409});}
