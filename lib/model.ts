@@ -43,7 +43,7 @@ export function calculate(p:Plan){
   const rosterEngineering=s.engMode==='Roster',engineering=engRows(p,i),qa=qaRows(p,i);
   const counts=[s.devManager,s.techLead,s.eng-s.devManager-s.techLead-s.l3,s.l3,qaMembers(effective,'qa_manager').length,qaMembers(effective,'qa_lead').length,qaMembers(effective,'qa_tester').length];
   if(s.qaAssignmentVersion===QA_SPRINT_ASSIGNMENT)for(let k=4;k<7;k++)counts[k]=qa.filter(x=>x.role===ROLES[k][0]&&x.eligible&&x.allocation>0).length;
-  if(rosterEngineering)for(let k=0;k<4;k++)counts[k]=engineering.filter(x=>x.role===ROLES[k][0]&&x.eligible).length;
+  if(rosterEngineering)for(let k=0;k<4;k++)counts[k]=engineering.filter(x=>x.role===ROLES[k][0]&&x.eligible&&x.allocation>0).length;
   const roles=s.roles.map((r,k)=>{
    const rosterBased=k>=4||rosterEngineering,people=counts[k],members=(k>=4?qa:engineering).filter(x=>x.role===r.key&&x.eligible),mode=k>=4?s.qaLeaveMode:s.engLeaveMode,named=rosterBased&&mode!=='Role estimates';
    const leave=people===0?0:named?sum(members.map(x=>x.leave)):r.confirmed??r.estimated;
@@ -82,7 +82,7 @@ export function datedLeave(p:Plan,id:string,i:number,kind:string){const s=schedu
 
 export function engMembers(p:Plan,key?:string){return p.engRoster.filter(r=>included(r)&&(!key||r.role===key));}
 export function allMembers(p:Plan){return [...engMembers(p).map(r=>({...r,team:'Engineering'})),...qaMembers(p).map(r=>({...r,team:'QA'}))];}
-export function syncEngineering(p:Plan,i:number){const s=p.sprints[i];if(s.engMode!=='Roster'||s.status!=='Planned')return;s.eng=engMembers(p).length;s.devManager=engMembers(p,'dev_manager').length;s.techLead=engMembers(p,'tech_lead').length;s.l3=engMembers(p,'l3_support').length;}
+export function syncEngineering(p:Plan,i:number){const s=p.sprints[i];if(s.engMode!=='Roster'||s.status!=='Planned')return;const members=engMembers(p).filter(r=>(s.engPeople[r.id]?.allocation??0)>0);s.eng=members.length;s.devManager=members.filter(r=>r.role==='dev_manager').length;s.techLead=members.filter(r=>r.role==='tech_lead').length;s.l3=members.filter(r=>r.role==='l3_support').length;}
 export function engRows(p:Plan,i:number){const source=p;if(p.sprints[i].engMode!=='Roster')return [];if(p.sprints[i].lockedContext)p={...p,...p.sprints[i].lockedContext};const s=p.sprints[i],days=schedule(p)[i].working;return p.engRoster.map(r=>{const x=s.engPeople[r.id]??{allocation:1,estimated:null,confirmed:null,share:null},eligible=included(r),allocation=eligible?x.allocation:0,leave=allocation===0?0:s.engLeaveMode==='Calendar leave'?calendarLeave(p,r.id,i)*allocation:x.confirmed??x.estimated,gross=days*s.hours*allocation,available=leave===null?null:Math.max(0,gross-leave*s.hours-additionalUnplanned(source,r.id,i)*allocation*s.hours),buffer=available===null?null:available*bufferRate(source,i);return {...r,...x,eligible,allocation,leave,gross,available,buffer,indicative:available===null?null:available-buffer!,share:x.share??s.roles.find(v=>v.key===r.role)?.share??0};});}
 
 
